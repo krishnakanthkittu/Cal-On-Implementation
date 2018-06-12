@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="cal_on.rtms.Home">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        tools:context="cal_on.usbterminal.MainActivity$USBTerminalFragment">
+
+        <LinearLayout
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/tagid"
+                android:layout_width="340dp"
+                card_view:cardCornerRadius="20dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select An Option:"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:orientation="horizontal" >
+
+                    <RadioGroup
+                        android:id="@+id/radioSex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radiohouse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="USB Cable"/>
+
+                        <RadioButton
+                            android:id="@+id/radiocommercial"
+                            android:layout_marginLeft="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="Bluetooth" />
+
+                    </RadioGroup>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:id="@+id/rdif"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="340dp"
+                android:layout_height="120dp"
+                android:id="@+id/coverage"
+                card_view:cardCornerRadius="20dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transfer Point"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+                    <Spinner
+                    android:id="@+id/panchayat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                        android:prompt="@string/spinner_title"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:orientation="horizontal">
+                    <Spinner
+                        android:id="@+id/panchayat1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:prompt="@string/spinner_title1"/>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:id="@+id/rdif1"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="340dp"
+                android:layout_height="200dp"
+                android:id="@+id/coverage1"
+                card_view:cardCornerRadius="20dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RFID Tag Details:"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="?attr/actionBarSize"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="00dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/input_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:hint="RF Tag SI No:" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/input_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:hint="Re-enter RF Tag SI No:" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:id="@+id/rdif2"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="340dp"
+                android:layout_height="150dp"
+                android:id="@+id/coverage2"
+                card_view:cardCornerRadius="20dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GET"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="200dp"
+                        android:textStyle="bold"
+                        android:id="@+id/get"
+                        android:background="#4F7AEC"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="30dp">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:hint="Latitude:        "
+                        android:id="@+id/latitude"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:focusable="false"
+                        android:hint="Longitude:        "
+                        android:id="@+id/longitude"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="00dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_nam1e"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/input_name1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:hint="Land Mark:" />
+                </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="20dp"
+            android:id="@+id/submitl"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:paddingRight="20dp">
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:gravity="center"
+                android:background="#97E5E7"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="20dp"
+
+            android:visibility="invisible"
+            android:layout_marginTop="40dp"
+            android:paddingRight="20dp">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
